@@ -8,18 +8,51 @@
   <title>Bootstrap classes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<style>
+  body {
+    padding-top: 70px;
+  }
+
+</style>
 </head>
 
 <body>
   <div class="container">
-    <h1 class="display-3">My First 5 Weeks at CodeFactory</h1>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="CodeFactory-LOGO.png" alt="" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <p class="lead">I've finished my first five weeks at <em>CodeFactory</em>. Here are some of the things I've learned
-      so far:</p>
 
-    <h2 class="display-6">Git and GitHub</h2>
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#git">Git and GitHub</a>
+          <a class="nav-link" href="#html">HTML</a>
+          <a class="nav-link" href="#css">CSS</a>
+          <a class="nav-link" href="#bootstrap">Bootstrap</a>
+          <a class="nav-link" href="#javascript">JavaScript</a>
+          <a class="nav-link" href="#glossary">Glossary</a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="display-4">My First 5 Weeks at CodeFactory</h1>
+
+    <p class="lead">I've finished my first five weeks at <em>CodeFactory</em>.<br>
+    Here are some of the things I've learned so far:</p>
+
+    <h2 id="git" class="display-6">Git and GitHub</h2>
     <ul>
-      <li>What is VC, Necessity, What is Git?</li>
+      <li>What is <abbr title="Version Control">VC</abbr>, Necessity, What is Git?</li>
       <li>Installation & Config via Command Line</li>
       <li>Commits, Best Practices, Standards</li>
       <li>Get GitHub Repository</li>
@@ -27,17 +60,17 @@
       <li>Publishing a website on GitHub pages.</li>
     </ul>
 
-    <h2 class="display-6"><abbr title="Hypertext Markup Language">HTML</abbr></h2>
+    <h2 id="html" class="display-6">HTML</h2>
     <ul>
-      <li>Using HTML tags to create websites.</li>
+      <li>Using <abbr title="Hypertext Markup Language">HTML</abbr> tags to create websites.</li>
       <li>Indenting and organize HTML correctly.</li>
       <li>Incorporating block elements.</li>
       <li>Including inline elements.</li>
       <li>Using both spans and divs.</li>
-      <li>Adding d IDs to style HTML with CSS.</li>
+      <li>Adding IDs to style HTML with <abbr title="Cascading Style Sheets">CSS</abbr>.</li>
     </ul>
 
-    <h2 class="display-6"><abbr title="Cascading Style Sheets">CSS</abbr></h2>
+    <h2 id="css" class="display-6">CSS</h2>
     <ul>
       <li>Creating a stylesheet.</li>
       <li>Using CSS selectors to specify an HTML element.</li>
@@ -50,19 +83,19 @@
       <li>Flex Grid and Flex Box</li>
     </ul>
 
-    <h2 class="display-6">Bootstrap</h2>
+    <h2 id="bootstrap" class="display-6">Bootstrap</h2>
     <ul>
       <li>Introduction to the Bootstrap</li>
       <li>Downloading Bootstrap</li>
-      <li>Bootstrap CDN</li>
+      <li>Bootstrap <abbr title="Content Delivery Network">CDN</abbr></li>
     </ul>
 
-    <h2 class="display-6 text-muted">JavaScript</h2>
+    <h2 id="javascript" class="display-6 text-muted">JavaScript</h2>
     <ul class="text-muted">
       <li>JavaScript vs CSS3</li>
       <li>What is programming</li>
       <li>What is JavaScript how is used & rendered</li>
-      <li>What JS can do?</li>
+      <li>What <abbr title="JavaScript">JS</abbr> can do?</li>
       <li>Variables & Data Types</li>
       <li>Browser Input & Output (e.g. prompt)</li>
       <li>Statements & comments</li>
@@ -74,13 +107,23 @@
       <li>Debugging (Debugger console log)</li>
     </ul>
 
-    <h2 class="display-6">Glossary</h2>
+    <h2 id="glossary" class="display-6">Glossary</h2>
     <dl class="row">
+      <dt class="col-sm-3">VC</dt>
+      <dd class="col-sm-9">Version Control</dd>
+
       <dt class="col-sm-3">HTML</dt>
       <dd class="col-sm-9">Hypertext Markup Language</dd>
 
       <dt class="col-sm-3">CSS</dt>
       <dd class="col-sm-9">Cascading Style Sheets</dd>
+
+      <dt class="col-sm-3">CDN</dt>
+      <dd class="col-sm-9">Content Delivery Network</dd>
+
+      <dt class="col-sm-3">JS</dt>
+      <dd class="col-sm-9">JavaScript</dd>
+
     </dl>
 
 
@@ -92,6 +135,7 @@
     </figure>
 
   </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
