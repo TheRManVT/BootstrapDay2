@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap classes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="CodeFactory-LOGO.png" alt="" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#git">Git and GitHub</a>
+          <a class="nav-link" href="#html">HTML</a>
+          <a class="nav-link" href="#css">CSS</a>
+          <a class="nav-link" href="#bootstrap">Bootstrap</a>
+          <a class="nav-link" href="#javascript">JavaScript</a>
+          <a class="nav-link" href="#glossary">Glossary</a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="display-4">My First 5 Weeks at CodeFactory</h1>
+
+    <p class="lead">I've finished my first five weeks at <em>CodeFactory</em>.<br>
+      Here are some of the things I've learned so far:</p>
+
+    <h2 id="git" class="display-6">Git and GitHub</h2>
+    <ul>
+      <li>What is <abbr title="Version Control">VC</abbr>, Necessity, What is Git?</li>
+      <li>Installation & Config via Command Line</li>
+      <li>Commits, Best Practices, Standards</li>
+      <li>Get GitHub Repository</li>
+      <li>Cloning a project from GitHub to my local machine.</li>
+      <li>Publishing a website on GitHub pages.</li>
+    </ul>
+
+    <h2 id="html" class="display-6">HTML</h2>
+    <ul>
+      <li>Using <abbr title="Hypertext Markup Language">HTML</abbr> tags to create websites.</li>
+      <li>Indenting and organize HTML correctly.</li>
+      <li>Incorporating block elements.</li>
+      <li>Including inline elements.</li>
+      <li>Using both spans and divs.</li>
+      <li>Adding IDs to style HTML with <abbr title="Cascading Style Sheets">CSS</abbr>.</li>
+    </ul>
+
+    <h2 id="css" class="display-6">CSS</h2>
+    <ul>
+      <li>Creating a stylesheet.</li>
+      <li>Using CSS selectors to specify an HTML element.</li>
+      <li>Writing CSS rules to style particular elements in my HTML.</li>
+      <li>Floating elements to create columns, sidebars, and other alignments.</li>
+      <li>Padding, margins, and the box model.</li>
+      <li>How CSS cascades to apply styles.</li>
+      <li>The importance of responsive design.</li>
+      <li>How to use media queries to dynamically change the appearance of a site based on the user's viewport.</li>
+      <li>Flex Grid and Flex Box</li>
+    </ul>
+
+    <h2 id="bootstrap" class="display-6">Bootstrap</h2>
+    <ul>
+      <li>Introduction to the Bootstrap</li>
+      <li>Downloading Bootstrap</li>
+      <li>Bootstrap <abbr title="Content Delivery Network">CDN</abbr></li>
+    </ul>
+
+    <h2 id="javascript" class="display-6 text-muted">JavaScript</h2>
+    <ul class="text-muted">
+      <li>JavaScript vs CSS3</li>
+      <li>What is programming</li>
+      <li>What is JavaScript how is used & rendered</li>
+      <li>What <abbr title="JavaScript">JS</abbr> can do?</li>
+      <li>Variables & Data Types</li>
+      <li>Browser Input & Output (e.g. prompt)</li>
+      <li>Statements & comments</li>
+      <li>Conditions</li>
+      <li>Loops</li>
+      <li>Array & Sorting Algorithms, Chaining</li>
+      <li>Functions, Returning & Parameters</li>
+      <li>Error handle</li>
+      <li>Debugging (Debugger console log)</li>
+    </ul>
+
+    <h2 id="glossary" class="display-6">Glossary</h2>
+    <dl class="row">
+      <dt class="col-sm-3">VC</dt>
+      <dd class="col-sm-9">Version Control</dd>
+
+      <dt class="col-sm-3">HTML</dt>
+      <dd class="col-sm-9">Hypertext Markup Language</dd>
+
+      <dt class="col-sm-3">CSS</dt>
+      <dd class="col-sm-9">Cascading Style Sheets</dd>
+
+      <dt class="col-sm-3">CDN</dt>
+      <dd class="col-sm-9">Content Delivery Network</dd>
+
+      <dt class="col-sm-3">JS</dt>
+      <dd class="col-sm-9">JavaScript</dd>
+
+    </dl>
+
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>"Everybody should learn how to program a computer because it teaches you how to think"</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">Steve Jobs</figcaption>
+    </figure>
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
