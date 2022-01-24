@@ -1,3 +1,23 @@
-actor-image{
-    width: 200px !important;
+.actor-image{
+    max-width: 20vw !important;
+    max-height: 50vh;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    align-self: center;
+}
+.container1{
+    padding: 5%;
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("pics/oaktree.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    &:after{
+        opacity: 0.15;
+    }
+}
+.character-name{
+    color:gray;
+}
+.container-right{
+    text-align: center;
 }
