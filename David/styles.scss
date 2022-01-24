@@ -1,23 +1,76 @@
-.actor-image{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.actor-image {
     max-width: 20vw !important;
     max-height: 50vh;
     border-top-left-radius: 15%;
     border-bottom-right-radius: 15%;
     align-self: center;
 }
-.container1{
-    padding: 5%;
-    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("pics/oaktree.png") ;
+.container1 {
+    padding: 10% 5% 5% 5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("pics/oaktree.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55%;
-    &:after{
-        opacity: 0.15;
+}
+.offers{
+    h1{
+        text-align: center;
+        margin-top:2.5%;
+        font-weight: bold;
+        color: rgba(0, 73, 141, 0.5)
     }
 }
-.character-name{
-    color:gray;
+.destinations{
+    h1{
+        border-top: 1px solid rgba(0, 73, 141, 0.5);
+        padding: 2.5%;
+        text-align: center;
+        margin-top:2.5%;
+        font-weight: bold;
+        color: rgba(0, 73, 141, 0.5)
+    }
 }
-.container-right{
+.container2 {
+    height: 70vh;
+    padding: 10% 5% 5% 5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+        url("https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-position: center;
+    // background-size: 55%;
+    background-size: cover;
+    .h3{
+        color: rgba(2, 0, 102, 0.5);
+        font-weight: bold;
+    }
+    h1{
+        color: rgba(0, 73, 141, 0.5);
+        font-weight: bold;
+    }
+    .container2-text{
+        position: relative;
+        top: 70%;
+    }
+
+}
+.container3{
+    margin-top:2.5%;
+    .card-img-top{
+        height:  24vh !important;
+        border-radius: 5%;
+        margin-top: 5%;
+}
+}
+.character-name {
+    color: gray;
+}
+.container-right {
     text-align: center;
+}
+#logo-icon {
+    height: 6vh;
 }
